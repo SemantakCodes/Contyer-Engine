@@ -50,7 +50,7 @@ namespace SoftEngine.Core
             float currentPitch = MathF.Asin(direction.Y);
 
             float newYaw = currentYaw + yaw;
-            float newPitch = Math.Clamp(currentPitch + pitch, -MathF.PI / 2f + 0.01f, MathF.PI / 2f - 0.01f);
+            float newPitch = MathHelper.Clamp(currentPitch + pitch, -MathF.PI / 2f + 0.01f, MathF.PI / 2f - 0.01f);
 
             direction.X = MathF.Sin(newYaw) * MathF.Cos(newPitch);
             direction.Y = MathF.Sin(newPitch);
@@ -63,7 +63,7 @@ namespace SoftEngine.Core
         {
             Vector3 direction = Target - Position;
             float distance = direction.Length();
-            distance = Math.Max(0.1f, distance * factor);
+            distance = MathHelper.Max(0.1f, distance * factor);
             Position = Target - Vector3.Normalize(direction) * distance;
         }
     }

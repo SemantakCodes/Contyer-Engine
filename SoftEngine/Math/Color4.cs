@@ -11,10 +11,10 @@ namespace SoftEngine.Math
 
         public Color4(float r, float g, float b, float a = 1.0f)
         {
-            R = Math.Clamp(r, 0f, 1f);
-            G = Math.Clamp(g, 0f, 1f);
-            B = Math.Clamp(b, 0f, 1f);
-            A = Math.Clamp(a, 0f, 1f);
+            R = MathHelper.Clamp(r, 0f, 1f);
+            G = MathHelper.Clamp(g, 0f, 1f);
+            B = MathHelper.Clamp(b, 0f, 1f);
+            A = MathHelper.Clamp(a, 0f, 1f);
         }
 
         public Color4(byte r, byte g, byte b, byte a = 255)
@@ -74,7 +74,7 @@ namespace SoftEngine.Math
 
         public static Color4 Lerp(Color4 a, Color4 b, float t)
         {
-            t = Math.Clamp(t, 0f, 1f);
+            t = MathHelper.Clamp(t, 0f, 1f);
             return new Color4(
                 a.R + (b.R - a.R) * t,
                 a.G + (b.G - a.G) * t,

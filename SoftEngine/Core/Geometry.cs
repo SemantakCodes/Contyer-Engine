@@ -1,5 +1,6 @@
 using System;
 using System.Numerics;
+using SoftEngine.Math;
 
 namespace SoftEngine.Core
 {

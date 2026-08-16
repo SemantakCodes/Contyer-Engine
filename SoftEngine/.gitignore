@@ -1,0 +1,21 @@
+# Build outputs
+bin/
+obj/
+
+# IDE
+.vs/
+.vscode/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# NuGet
+packages/
+*.nupkg
+
+# User settings
+*.user
+*.suo

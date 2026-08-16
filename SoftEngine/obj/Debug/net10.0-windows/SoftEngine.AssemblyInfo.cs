@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SoftEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+196fabb87b0d2f8a09bd96fd2b902a03438a7712")]
 [assembly: System.Reflection.AssemblyProductAttribute("SoftEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SoftEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

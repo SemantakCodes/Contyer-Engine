@@ -3,10 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SoftEngine"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="SoftEngine - 3D Software Renderer" Height="720" Width="1280"
+        KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
     <Grid>
-
+        <Image x:Name="RenderImage" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
+            <TextBlock x:Name="InfoText" Foreground="White" FontFamily="Consolas" FontSize="14" 
+                       Background="#80000000" Padding="10" Text="Initializing..."/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
+            <TextBlock x:Name="ControlsText" Foreground="White" FontFamily="Consolas" FontSize="12" 
+                       Background="#80000000" Padding="10"
+                       Text="WASD: Move Camera | Arrow Keys: Rotate | Q/E: Zoom | 1-3: Render Mode | 4-5: Shading | C: Toggle Culling"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -81,7 +81,7 @@ namespace SoftEngine.Core
                 return 0f;
 
             float attenuation = 1f / (ConstantAttenuation + LinearAttenuation * distance + QuadraticAttenuation * distance * distance);
-            return Math.Clamp(attenuation, 0f, 1f);
+            return MathHelper.Clamp(attenuation, 0f, 1f);
         }
 
         public Color4 GetColor(Vector3 surfacePosition)
